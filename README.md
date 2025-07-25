@@ -61,6 +61,8 @@ A complete Guide to Install Frappe Bench in Windows 11 Using Docker and install 
     
    We need to tell bench to use the right containers instead of localhost. Run the following commands inside the container:
 
+   For the correct commands, see: https://discuss.frappe.io/t/cant-install-devcontainer-using-frappe-docker-python-env-error/140294/2
+   
     bench set-config -g db_host mariadb
     bench set-config -g redis_cache redis://redis-cache:6379
     bench set-config -g redis_queue redis://redis-queue:6379
